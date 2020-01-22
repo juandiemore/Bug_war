@@ -5,7 +5,7 @@ using UnityEngine;
 public class bullet : MonoBehaviour
 {
   private void OnCollisionEnter2D(Collision2D other) {
-      if(other.gameObject.tag == "enemy"){
+      if(other.gameObject.tag == "enemy" || other.gameObject.tag == "boss"){
       
      Destroy(gameObject);
       }

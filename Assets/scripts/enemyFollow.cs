@@ -6,16 +6,17 @@ using UnityEngine.UI;
 public class enemyFollow : MonoBehaviour
 {
     public Transform goal;
-
     public float speed = 5f;
     public float angleSpeed = 1;
     private Vector2 movement;
     private Rigidbody2D rb;
+    private playerHP php;
+    public float damage = 15f;
 
      void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-       
+        php = goal.GetComponent<playerHP>();
     }
 
     // Update is called once per frame
@@ -36,6 +37,15 @@ public class enemyFollow : MonoBehaviour
         rb.MovePosition((Vector2) transform.position + (direccion * speed * Time.deltaTime));
     }
 
+   
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Player"){
+        php.takeDamage(damage);
+       // goal.rb.AddForce(goal.rb.transform.up*-10,ForceMode2D.Impulse);
+        }
+        
+    }
     
 
 }

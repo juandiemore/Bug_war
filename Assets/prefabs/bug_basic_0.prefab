@@ -156,8 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goal: {fileID: 0}
-  speed: 1
+  speed: 3
   angleSpeed: 1
+  damage: 15
 --- !u!114 &1038464255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,8 +174,9 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   diskPrefab: {fileID: 8750643020943821824, guid: 3fcc824228417d24087cefdc66a293c7,
     type: 3}
-  StartHealth: 100
+  StartHealth: 300
   health: 0
+  posicion: {fileID: 6493992557249372916}
   imagen: {fileID: 0}
   bicho: {fileID: 3586246716862031504, guid: 55e2edb8f3f2607418e961ff5ec96b70, type: 3}
 --- !u!82 &223896029

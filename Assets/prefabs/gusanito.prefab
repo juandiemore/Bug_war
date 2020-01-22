@@ -120,6 +120,7 @@ MonoBehaviour:
   goal: {fileID: 0}
   speed: 1
   angleSpeed: 1
+  damage: 15
 --- !u!50 &2418641894621699296
 Rigidbody2D:
   serializedVersion: 4
@@ -182,8 +183,9 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   diskPrefab: {fileID: 8750643020943821824, guid: 3fcc824228417d24087cefdc66a293c7,
     type: 3}
-  StartHealth: 100
+  StartHealth: 130
   health: 0
+  posicion: {fileID: 2418641894621699297}
   imagen: {fileID: 0}
   bicho: {fileID: -3248218936244412262, guid: a75c30f6189607847bad433f5974d1ce, type: 3}
 --- !u!82 &1099166786

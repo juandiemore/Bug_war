@@ -122,6 +122,7 @@ MonoBehaviour:
   goal: {fileID: 0}
   speed: 4
   angleSpeed: 1
+  damage: 15
 --- !u!50 &4274605275543070798
 Rigidbody2D:
   serializedVersion: 4
@@ -176,6 +177,7 @@ MonoBehaviour:
     type: 3}
   StartHealth: 100
   health: 0
+  posicion: {fileID: 4274605275543070784}
   imagen: {fileID: 0}
   bicho: {fileID: 7844909071150746530, guid: 58ab177756436b641ad3dbd7f1a5e11b, type: 3}
 --- !u!114 &803202773

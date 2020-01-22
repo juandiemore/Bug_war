@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 577985062729689147}
   - component: {fileID: 577985062729689144}
   - component: {fileID: 577985062729689145}
+  - component: {fileID: 885361422}
+  - component: {fileID: 885361423}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -138,6 +140,7 @@ MonoBehaviour:
   firePoint: {fileID: 577985063834094202}
   bulletPrefab: {fileID: 3835892949704581525, guid: 3046991ff57c47a448f0d88e8c02cb05,
     type: 3}
+  inventoryBullets: 30
   bulletForce: 5
 --- !u!61 &577985062729689144
 BoxCollider2D:
@@ -184,6 +187,38 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &885361422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577985062729689150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63a2e5d779ca8744287534a078888877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diskText: {fileID: 0}
+  diskStack: {fileID: 0}
+  recarga: {fileID: 0}
+--- !u!114 &885361423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577985062729689150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 122911fecf17c6c4bbff92d34a57ab06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  imagen: {fileID: 0}
+  cara: {fileID: -3136587300676421334, guid: a102463150cb1054e8acf3cb7a516934, type: 3}
+  health: 0
+  StartHealth: 100
 --- !u!1 &577985063834094205
 GameObject:
   m_ObjectHideFlags: 0
